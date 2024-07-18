@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #defffc;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+text-align: center;
+padding: 10px 20px;
+border-bottom: 1px solid black;
+background-image: url(../img/presentancion.png);
+background-repeat: no-repeat;
+}
+
+.titulo_1 {
+    font-weight: 10;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+
+nav ul li {
+    margin: 0 10px;
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.subtitulos  {
+    margin-bottom: 10px;
+}
+.parrafos {
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 0 ;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin: 20px;
+    padding: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.contenedorDestinos {
+    margin: 20px;
+    border: 4px solid ;
+    border-radius: 10px;
+}
+
+.imgDestino {
+    display: block;
+    width: 100%;
+    height: auto;
+    ;
+}
+
+iframe {
+    border-style: outset;
+    margin: auto;
+    display: block;;
+}
+
+form {
+    margin-top:20px ;
+
+}
+
+label {
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black
+    
+}
+
+input [type="text"]
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid black;
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+
+.enviar {
+    margin-top: 10px;
+    color: #defffc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none
+    
+}
+
+.subtitulo_parrafos {
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.fotos {
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    margin-top: 20px 
+    
+
+}
+
+.subtitulos_producto {
+    font-weight: 600;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+.parrafos_productos {
+    font-size: 20px; 
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+.ubicacion {
+
+    padding: 10px 20px;
+    margin-bottom: 25px;
+text-align: center;
+text-decoration: underline;
+}
+
