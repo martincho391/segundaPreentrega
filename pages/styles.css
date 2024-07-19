@@ -107,11 +107,10 @@ h1 {
 }
 
 .infoContacto p 
-.infoContacto h3
 .redesSociales a {
     margin: 5px 0;
     font-size: 1.2rem;
-    text-align: center;
+    
     }
 
 .redesSociales a {
@@ -192,10 +191,12 @@ margin-right: 10px;
 }
 
 .bannerContenido h2 {
+    text-align: center;
     margin-bottom: 10px;
     color: #fff;
     font-size: 3rem;
     font-weight:bold
+
     
 }
 .bannerContenido p {
@@ -219,12 +220,12 @@ border-bottom: 1px solid black;
 .trayectos h3 {
     text-transform: uppercase;
     font-size: 1.3rem;
-    margin-top: 100px;
+    margin-top: 10px;
     
 }
 
 .trayectos p { 
-    margin-top: 25px;
+    margin-top: 10px;
     padding: 10px;
     font-size: 1.1rem;
     color:#212121
@@ -259,6 +260,8 @@ background-color: white;
 
 .tarjeta img {
 max-width: 100%;
+align-items: center;
+font-family: Roboto;
 }
 
 .tarjeta p {
@@ -311,11 +314,12 @@ text-align: center;
 text-decoration: underline;
 }
 
+
 /* BANNER NOSOTROS */
 
 .bannerNosotros {
+    background-color: #7AB730;
     margin-top: 2px;
-    background-color: #28a745;
     height: calc(30vh - 30px);
         position: relative;
         display: flex;
@@ -336,7 +340,7 @@ text-decoration: underline;
         background-color: #28a745;
     }
             
-.nosotros h1 {
+.nosotros h2 {
     font-size: 1.8rem;
     text-decoration: underline;
     margin-top: 20px;
@@ -348,8 +352,25 @@ text-decoration: underline;
     margin-top: 10px;
     font-size: 1.8rem;
     text-decoration:none
-
 }
+
+.nosotros p {
+font-size: 20px;
+font-family: sans-serif;
+margin-top: 15px;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+
+.nosotros_banner {
+    background-color: #7AB730;
+    font-size: 2rem;
+    text-align: center;
+    color:#F3F3F3;
+    height: 100%;
+    width: 100%;
+}
+
 
 
 /* RESPONSIBLE*/
@@ -372,7 +393,7 @@ text-align: center;
 }
 
 .bannerContenido p{
-    font-size: 1rem;
+    font-size: 1.5rem;
     }
     
 
@@ -404,18 +425,12 @@ grid-template-columns: 1fr;
     text-align: center;
     }
 
-.infoContacto {
-text-align: center;
-margin-left: 20px;
-}
-}
 
 @media (max-width: 768px) {
 
 .contenedorTrayectos{
 grid: template columns 1fr; ;
-
-
-
 }
+
+
 }
