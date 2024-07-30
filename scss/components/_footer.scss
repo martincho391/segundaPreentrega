@@ -23,11 +23,12 @@
     
     }
 
-.redesSociales a {
-color: #7AB730;
+.redesSociales  {
+    color: #7AB730;
 text-decoration: none;
 margin-right: 10px;
 font-size: 1.5rem;
+
         }   
 
 .redesSociales a:hover {
@@ -41,6 +42,7 @@ margin-right: 10px;
 .footer h4 {
 margin-bottom: 10px;
 font-size: 1.2rem;
+color: #fff;
 
 }
 
@@ -59,9 +61,15 @@ align-items: center;
 }
 
 .redesSociales a:hover{
-    color: #28a745;
+color:#28a745;
     }
 
 .footer i {
 margin-right: 10px;
+}
+
+.footer_logo {
+    height: 100px;
+    width: 100px;
+    max-width: 100%;
 }

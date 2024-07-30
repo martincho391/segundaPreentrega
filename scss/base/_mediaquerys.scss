@@ -1,6 +1,4 @@
 
-/* MEDIAQUERYS*/
-
 @media (max-width: 1023px) {
 
     .encabezado {
@@ -11,6 +9,12 @@
     
     }
     
+
+    .encabezado h1 {
+    font-size: 1rem;
+        
+        }
+
     .bannerContenido{
     font-size: 1rem;
     text-align: center;
@@ -34,10 +38,6 @@
     
     }
     
-    .whatsapp {position: fixed;
-        bottom: 300px;
-        right: 160px; ;
-    }
     
     .contenedorTrayectos{
     grid-template-columns: 1fr;
@@ -49,12 +49,36 @@
         text-align: center;
         }
     
-    
+    }
+
+
     @media (max-width: 768px) {
-    
-    .contenedorTrayectos{
-    grid: template columns 1fr; ;
-    }
-    
-    }
-    }
+
+        .contenedorTrayectos{
+        grid: template columns 1fr; ;
+        }
+        
+        
+
+        .encabezado h1 {
+            font-size: 1.2rem;
+                
+                }
+
+                .bannerContenido h2 {
+                    text-align: center;
+                    margin-bottom: 10px;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    font-weight:bold
+                    
+                }
+                .bannerContenido p {
+                    color: #FAFAFA;
+                    font-size: 1rem;
+                    text-transform:uppercase ;
+                    font-weight: 700;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+        }
