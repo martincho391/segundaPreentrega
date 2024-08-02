@@ -1,43 +1,52 @@
-
 /* HEADER */
 
-.encabezado {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
-    box-shadow: 0px 2px 4px rgba(0, 0,0,0.2)
+
+@mixin anclas {
+    text-decoration: none;
+    color:black
 }
 
-.encabezado h1 {
+.encabezado {
+margin-top: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 100px;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+
+h1 {
     text-transform: uppercase;
     font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(0, 0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     font-size: 2rem;
     text-decoration: none;
     margin-left: 20px;
 }
 
-.encabezado li {
+li {
     display: inline-block;
     list-style-type: none;
-    margin-left: 60px;
-}
+    margin-left: 80px;
 
-.encabezado li a:hover {
-color: #7AB730;
-}
-.encabezado li a {
-    margin-left: 100px;
-    text-decoration: none;
-    margin: 10px;
-    color: black;
+    a {
+
+    @include anclas;
     font-size: 1.2rem;
+    margin-left: 80px;
+    margin: 5px;
+
+    &:hover {
+        color: #7ab730;
+    }
 }
 
-.encabezado img {
-    margin: 50px 50px;
-width: 150px;
-height: 110px;
 }
+    
+
+}
+img {
+    margin: 50px 50px;
+    width: 150px;
+    height: 110px;
+}
+

@@ -1,10 +1,9 @@
-  /* HEADER */
+  /* FOOTER */
 
 .footer {
     background-color: #212121;
     padding: 20px 0;
-    color: #fff
-    
+    color: #fff;
 }
 
 .contenidofooter {
@@ -13,59 +12,55 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    
 }
 
-.infoContacto p 
-.redesSociales a {
+.infoContacto p .redesSociales a {
     margin: 5px 0;
     font-size: 1.2rem;
+}
+
+.redesSociales {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: $color-verde
     
+    
+}
+
+.footer {
+    i {
+    margin-right: 10px;
     }
 
-.redesSociales  {
-    color: #7AB730;
-text-decoration: none;
-margin-right: 10px;
-font-size: 1.5rem;
+    h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    }
 
-        }   
-
-.redesSociales a:hover {
-color: #28a745;
-                    }   
-
-.footer i { 
-margin-right: 10px;
+    h3 {
+    margin-bottom: 1px;
+    margin-left: 515px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    }
 }
 
-.footer h4 {
-margin-bottom: 10px;
-font-size: 1.2rem;
-color: #fff;
-
-}
-
-.footer h3 {
-margin-bottom: 1px;
-margin-left: 515px;
-font-size: 15px;
-display: flex;
-align-items: center;
-}
 .redesSociales a {
     color: #7AB730;
     text-decoration: none;
     margin-right: 10px;
     font-size: 1.5rem;
+
+    &:hover {
+    color: #28a745;
+    }
 }
 
-.redesSociales a:hover{
-color:#28a745;
-    }
-
 .footer i {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer_logo {

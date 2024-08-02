@@ -1,0 +1,30 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #F3F3F3;
+    
+}
+
+//! EXTENDS
+
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    background-color: #212121;
+    @extend %flex;
+}
+
+//! VARIABLES 
+
+$color-verde: #7AB730;
+$color-blanco: #fafafa;

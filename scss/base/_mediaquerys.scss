@@ -1,84 +1,127 @@
 
+/* MEDIA 1023 PX */
+
 @media (max-width: 1023px) {
 
     .encabezado {
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-    
-    
-    }
+        height: auto;
+        flex-direction: column;
+        text-align: center;
     
 
-    .encabezado h1 {
-    font-size: 1rem;
-        
+        h1 {
+            font-size: 1.5rem;
+            text-decoration: none;
+            margin-left: 20px;
         }
+        li  {
+        text-decoration: none;
+        color: black;
+        font-size: 0.5rem;
+        margin: 1px;
+        margin-left: 60px;
+        
+        a {
 
-    .bannerContenido{
-    font-size: 1rem;
-    text-align: center;
-    }
-    
-    .bannerContenido p{
-        font-size: 1.5rem;
+            @include anclas;
+            font-size: 1.2rem;
+            margin-left: 60px;
+            margin: 1px;
         }
         
     
+    .bannerContenido {
+        font-size: 2rem;
+        text-align: center;
     
+        p {
+    font-size: 5rem;
+        }
+}
+
     .trayectos {
         margin: 5vh;
         font-size: 2rem;
-    
-    }
-    
-    .trayectos h3 
-    .trayectos p {
-    font-size: inherit;
-    
-    }
-    
-    
-    .contenedorTrayectos{
-    grid-template-columns: 1fr;
-    
-    }
-    
-    .contenidofooter{
+
+        h3 .trayectos p {
+        font-size: inherit;
+        }
+        
+
+    .contenidofooter {
         flex-direction: column;
         text-align: center;
-        }
+    }
+
     
     }
 
 
+        .navbar-toggler {
+            padding: 5px 10px;  
+            font-size: 12px; 
+        }
+
+
+     /* MEDIA 768 PX */
+    
     @media (max-width: 768px) {
 
-        .contenedorTrayectos{
-        grid: template columns 1fr; ;
+        .contenedorTrayectos {
+            grid: template columns 1fr;
         }
         
-        
-
         .encabezado h1 {
-            font-size: 1.2rem;
-                
-                }
+            font-size: 1.5rem;
+    }
+        
+        
+        
+        
+        /* BANNER */
 
-                .bannerContenido h2 {
-                    text-align: center;
-                    margin-bottom: 10px;
-                    color: #fff;
-                    font-size: 1.5rem;
-                    font-weight:bold
-                    
-                }
-                .bannerContenido p {
-                    color: #FAFAFA;
-                    font-size: 1rem;
-                    text-transform:uppercase ;
-                    font-weight: 700;
-                    text-align: center;
-                    margin-bottom: 20px;
-                }
+        .bannerContenido {
+            h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: bold;
         }
+            
+        
+            p {
+            color: #FAFAFA;
+            font-size: 1rem;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        }
+
+        .bannerNosotros p {
+            color: #FAFAFA;
+            font-size: 0.5rem;
+            text-transform:uppercase;
+            text-align: center;
+            margin-bottom: 20px;
+            }
+
+        .nosotros h2 {
+            font-size: 1rem;
+        }
+
+            .nosotros_banner p {
+                background-color: #7AB730;
+                font-size: 1.2rem;
+                text-align: center;
+                color: #F3F3F3;
+                height: 100%;
+                width: 100%;
+            }
+            
+        }
+
+    }
+}
+}
