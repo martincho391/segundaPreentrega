@@ -57,9 +57,9 @@
 
   /* TRAYECTOS */
 
-  trayectos {
+.trayectos {
     text-align:center ;
-    margin: none;
+    margin: 15px;
 border-bottom: 1px solid black;
     
     }
@@ -79,11 +79,9 @@ border-bottom: 1px solid black;
     color:#212121
         } 
 
-.contenedorTrayectos {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 5px;
-        }
+.trayectos h2 {
+    font-size: 25px;
+} 
 
 .trayectos  {
     text-align: center;
@@ -95,14 +93,25 @@ border: 1px solid #ccc
 
   /* TARJETAS */ 
 
-.tarjeta {
+.galeria {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    border: 1px solid #ccc;
-    background-color: white;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.tarjeta {
+    .tarjeta  {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+        border: 1px solid #ccc;
+        background-color: white;
+        
+        }
 
     img {
     width: 80%;
@@ -120,9 +129,39 @@ border: 1px solid #ccc
     margin-bottom: 45px;
     }
 
+    //--TARJETAS PRODUCTOS --//
+
+    .destacados {
+display: flex;
+justify-content: space-around;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 10px;
+box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+border: 1px solid #ccc;
+background-color: white;
+        }
+    
+div {
+
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        margin-bottom: 20px; 
+        display: flex;
+    }
+
+    .destacados h2 {
+        font-size: 25px;
+    }
+
     .parrafos_productos {
         font-size: 1.2rem;
     }
+
 }
 
 
@@ -232,4 +271,159 @@ font-size: 1.5rem;
     }
 
 
+  /* CONTAINER CONTACTO */
+
+.main {
+display:flex;
+justify-content: center;
+align-items: center;
+background: linear-gradient (rgba(0, 0, 0, 0.2));
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
 }
+
+.container {
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;
+}
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data > p > i {
+    color:crimson;
+    margin-right: 10px;
+    font-size:25px;
+}
+
+
+
+.links {
+    display:flex;
+    gap:15px;
+}
+
+.links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s;
+}
+
+.links > a > i {
+    color:#fff;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background:(rgba(0, 0, 0, 0.2));
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid crimson;
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    border:3px solid transparent;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(0, 0, 0, 0.2);
+    transition: .3s;
+}
+
+.input-box > input:focus ~ i {
+    color:crimson;
+}
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(172, 16, 47);
+}
+}
+

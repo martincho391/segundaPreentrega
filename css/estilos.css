@@ -39,7 +39,9 @@ body {
       color: black;
       font-size: 1.2rem;
       margin-left: 80px;
-      margin: 5px; }
+      margin: 5px;
+      row-gap: 6rem;
+      flex-wrap: wrap; }
       .encabezado li a:hover {
         color: #7ab730; }
 
@@ -96,9 +98,9 @@ img {
   margin-bottom: 20px; }
 
 /* TRAYECTOS */
-trayectos {
+.trayectos {
   text-align: center;
-  margin: none;
+  margin: 15px;
   border-bottom: 1px solid black; }
 
 .trayectos h3 {
@@ -112,10 +114,8 @@ trayectos {
   font-size: 1.1rem;
   color: #212121; }
 
-.contenedorTrayectos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 5px; }
+.trayectos h2 {
+  font-size: 25px; }
 
 .trayectos {
   text-align: center;
@@ -124,27 +124,60 @@ trayectos {
   border: 1px solid #ccc; }
 
 /* TARJETAS */
-.tarjeta {
+.galeria {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; }
+
+.tarjeta .tarjeta {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   border: 1px solid #ccc;
   background-color: white; }
-  .tarjeta img {
-    width: 80%;
-    height: 60%;
-    align-items: center;
-    border-radius: 10px; }
-  .tarjeta p {
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 45px; }
-  .tarjeta .parrafos_productos {
-    font-size: 1.2rem; }
+
+.tarjeta img {
+  width: 80%;
+  height: 60%;
+  align-items: center;
+  border-radius: 10px; }
+
+.tarjeta p {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 45px; }
+
+.tarjeta .destacados {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  background-color: white; }
+
+.tarjeta div {
+  border: 1px solid black;
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex; }
+
+.tarjeta .destacados h2 {
+  font-size: 25px; }
+
+.tarjeta .parrafos_productos {
+  font-size: 1.2rem; }
 
 /* BANNER NOSOTROS */
 .bannerNosotros {
@@ -212,22 +245,129 @@ trayectos {
 .nosotrosContenido {
   background-color: #28a745; }
 
-.bannerProductos h2 {
-  font-size: 1.8rem;
-  text-decoration: underline;
-  margin-top: 20px;
-  margin-left: 20px;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 1.8rem;
-  text-decoration: none; }
-
-.bannerProductos p {
-  font-size: 1.5em;
-  font-family: sans-serif;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-bottom: 0px; }
+.bannerProductos {
+  /* CONTAINER CONTACTO */ }
+  .bannerProductos h2 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    text-decoration: none; }
+  .bannerProductos p {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 0px; }
+  .bannerProductos .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+  .bannerProductos .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    padding: 20px;
+    gap: 10px;
+    width: 1000px; }
+  .bannerProductos .box-info {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 50px; }
+  .bannerProductos .box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px; }
+  .bannerProductos .data {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; }
+  .bannerProductos .data > p {
+    font-size: 1rem; }
+  .bannerProductos .data > p > i {
+    color: crimson;
+    margin-right: 10px;
+    font-size: 25px; }
+  .bannerProductos .links {
+    display: flex;
+    gap: 15px; }
+  .bannerProductos .links > a {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    background: crimson;
+    text-align: center;
+    transition: .1s; }
+  .bannerProductos .links > a > i {
+    color: #fff;
+    line-height: 40px;
+    font-size: 20px; }
+  .bannerProductos form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px; }
+  .bannerProductos .input-box {
+    position: relative; }
+  .bannerProductos .input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.2);
+    border: 3px solid transparent;
+    letter-spacing: 1px;
+    transition: .3s;
+    color: #fff; }
+  .bannerProductos .input-box > input::placeholder,
+  .bannerProductos .input-box > textarea::placeholder {
+    color: #a3a3a3; }
+  .bannerProductos .input-box > input:focus::placeholder,
+  .bannerProductos .input-box > textarea:focus::placeholder {
+    color: transparent; }
+  .bannerProductos .input-box > input:focus,
+  .bannerProductos .input-box > textarea:focus {
+    border-bottom: 3px solid crimson;
+    animation: shake .2s; }
+  .bannerProductos .input-box > textarea {
+    border: 3px solid transparent;
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    outline: none;
+    transition: .3s;
+    color: #fff;
+    letter-spacing: 1.5px; }
+  .bannerProductos .input-box > i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgba(0, 0, 0, 0.2);
+    transition: .3s; }
+  .bannerProductos .input-box > input:focus ~ i {
+    color: crimson; }
+  .bannerProductos form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: crimson;
+    color: #fff;
+    border: none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem; }
+  .bannerProductos form > button:hover,
+  .bannerProductos .links > a:hover {
+    background: #ac102f; }
 
 /* FOOTER */
 .footer {
@@ -288,7 +428,8 @@ trayectos {
   .encabezado {
     height: auto;
     flex-direction: column;
-    text-align: center; }
+    text-align: center;
+    flex-wrap: wrap; }
     .encabezado h1 {
       font-size: 1.5rem;
       text-decoration: none;
@@ -306,6 +447,9 @@ trayectos {
         font-size: 1.2rem;
         margin-left: 60px;
         margin: 1px; }
+      .encabezado li .navbar-nav {
+        row-gap: 0rem;
+        flex-wrap: wrap; }
       .encabezado li .bannerContenido {
         font-size: 2rem;
         text-align: center; }
@@ -320,8 +464,10 @@ trayectos {
           flex-direction: column;
           text-align: center; }
       .encabezado li .navbar-toggler {
-        padding: 5px 10px;
-        font-size: 12px; } }
+        padding: 5px 5px;
+        font-size: 12px; }
+      .encabezado li .nav-button {
+        padding: 5px 10px; } }
     @media (max-width: 1023px) and (max-width: 768px) {
       .encabezado li {
         /* BANNER */ }
@@ -356,3 +502,24 @@ trayectos {
           color: #F3F3F3;
           height: 100%;
           width: 100%; } }
+
+@media (max-width: 1023px) {
+      .encabezado li .nav-button {
+        padding: 5px 5px; }
+      .encabezado li .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); }
+      .encabezado li .nav-list {
+        flex-direction: column;
+        align-items: end; } }

@@ -34,6 +34,8 @@ li {
     font-size: 1.2rem;
     margin-left: 80px;
     margin: 5px;
+    row-gap: 6rem;
+    flex-wrap: wrap;
 
     &:hover {
         color: #7ab730;

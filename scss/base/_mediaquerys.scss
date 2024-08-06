@@ -7,6 +7,7 @@
         height: auto;
         flex-direction: column;
         text-align: center;
+        flex-wrap: wrap;
     
 
         h1 {
@@ -27,9 +28,15 @@
             font-size: 1.2rem;
             margin-left: 60px;
             margin: 1px;
+    
         }
         
     
+.navbar-nav {
+        row-gap: 0rem;
+        flex-wrap: wrap;
+    }
+
     .bannerContenido {
         font-size: 2rem;
         text-align: center;
@@ -58,10 +65,14 @@
 
 
         .navbar-toggler {
-            padding: 5px 10px;  
+            padding: 5px 5px;  
             font-size: 12px; 
         }
 
+
+        .nav-button {
+            padding: 5px 10px; 
+        }
 
      /* MEDIA 768 PX */
     
@@ -74,8 +85,6 @@
         .encabezado h1 {
             font-size: 1.5rem;
     }
-        
-        
         
         
         /* BANNER */
@@ -120,6 +129,34 @@
                 width: 100%;
             }
             
+        }
+
+
+        .nav-button {
+            padding: 5px 5px; 
+        }
+
+        .nav {
+            opacity: 0;
+            visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #1c1c1c;
+            padding: 1rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        }
+
+        
+
+        .nav-list {
+            flex-direction: column;
+            align-items: end;
         }
 
     }
